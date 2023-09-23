@@ -55,3 +55,4 @@ if choice_1 == "left":
 else:
     os.system('cls')
     print("You have fell into a hole full of Snakes. Game Over.")
+    
