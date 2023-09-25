@@ -4,30 +4,36 @@ from Functions.start import start
 from Functions.newPet import newPet
 from Functions.checkBalance import checkBalance
 
-os.system('cls')
+is_running = True
 
-print("Welcome to PyPet! Your Virtual Desktop Python Pet!\n")
+while is_running == True:
+    os.system('cls')
 
-print("Please select an option:\n")
-print("1 - Call your pet")
-print("2 - Check Balance")
-print("3 - Exit\n")
+    print("Welcome to PyPet! Your Virtual Desktop Python Pet!\n")
 
-selection = input("")
+    print("Please select an option:\n")
+    print("1 - Call your pet")
+    print("2 - Check Balance")
+    print("3 - Exit\n")
 
-if selection == "1":
-    if start() == 1:
+    selection = input("")
+
+    if selection == "1":
+        if start() == 1:
+            os.system('cls')
+
+            #For Debugging
+            print("LOG: start() has finished")
+            #
+
+    elif selection == "2":
+        
         os.system('cls')
+        print(checkBalance())
 
         #For Debugging
-        print("LOG: start() has finished")
+        print("LOG: checkBalance() has finished")
         #
 
-elif selection == "2":
-    
-    os.system('cls')
-    print(checkBalance())
-
-    #For Debugging
-    print("LOG: checkBalance() has finished")
-    #
+    elif selection == "3":
+        is_running = False

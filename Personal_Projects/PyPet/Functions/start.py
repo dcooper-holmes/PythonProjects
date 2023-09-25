@@ -1,4 +1,5 @@
 import os
+from Functions.newPet import newPet
 
 def start():
     os.system('cls')
@@ -14,11 +15,8 @@ def start():
         selection = input("Type Y for Yes and N for No: ")
 
         if selection == "Y" or selection == "y":
-            os.mkdir("./Pets")
-
-            #For Debugging
-            print("LOG: Pets directory created...")
-            #//
+            os.system('cls')
+            newPet()
 
     else:
         
