@@ -1,0 +1,3 @@
+
+def newPet() :
+    return(True)
