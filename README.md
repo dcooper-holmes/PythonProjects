@@ -5,4 +5,6 @@ For example, under the '100-Days-Of-Code' folder you will find all of my project
 
 https://www.udemy.com/course/100-days-of-code
 
+Alternatively, you can see all my personal projects, created with my current knowledge in Python, found under the 'Personal_Projects' folder.
+
 Feel free to download and run my projects to see what I have created!
