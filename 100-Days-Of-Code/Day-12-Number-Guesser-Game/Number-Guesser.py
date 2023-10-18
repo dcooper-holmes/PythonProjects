@@ -21,12 +21,18 @@ def checkAnswer(chosenNumber, userGuess):
     \nIf the users guess is higher or lower then the chosen number then it will remove 1 from the number of guesses."""
 
     if userGuess > chosenNumber:
+        os.system('cls')
+        print(logo)
         print("Too High")
         return False
     elif userGuess < chosenNumber:
+        os.system('cls')
+        print(logo)
         print("Too Low")
         return False
     elif userGuess == chosenNumber:
+        os.system('cls')
+        print(logo)
         print(f"Correct! The number was {str(chosenNumber)}!")
         return True
 
@@ -43,8 +49,10 @@ def game():
     guesses = chooseDifficulty()
 
     os.system('cls')
+    print(logo)
 
     while guesses > 0:
+
         userGuess = input("Make a guess: ")
 
         isCorrect = checkAnswer(chosenNumber=chosenNumber, userGuess=int(userGuess))
