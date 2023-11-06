@@ -98,7 +98,7 @@ def coffee_machine():
         print("Money: " + str(resources['money']))
         coffee_machine()
 
-    else:
+    elif selection == "espresso" or selection == "latte" or selection == "cappuccino":
         if check_resources(selection):
 
             if make_transaction(selection):
@@ -114,6 +114,8 @@ def coffee_machine():
 
         else:
             coffee_machine()
+    else:
+        coffee_machine()
 
 
 coffee_machine()
