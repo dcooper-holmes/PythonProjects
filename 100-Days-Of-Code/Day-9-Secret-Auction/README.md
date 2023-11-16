@@ -1,0 +1,2 @@
+# Secret Auction
+This python application is a secret auction application. You can use it to keep the bidding annonymous so no one knows who the highest bidder is until the next bid is lower than the last.
