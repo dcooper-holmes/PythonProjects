@@ -1,0 +1,2 @@
+# Python Turtle Racing Game
+This python application is a Turtle racing game where you can bet on which Turtle you think is going to win the race: 'red', 'orange', 'yellow', 'green', 'blue' or 'purple'.
