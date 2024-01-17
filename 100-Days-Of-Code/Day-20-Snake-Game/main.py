@@ -18,5 +18,12 @@ while game_is_on:
     
     snake.move()
 
+    screen.onkey(fun=snake.up, key="Up")
+    screen.onkey(fun=snake.down, key="Down")
+    screen.onkey(fun=snake.left, key="Left")
+    screen.onkey(fun=snake.right, key="Right")
+
+    screen.listen()
+
 
 screen.exitonclick()
