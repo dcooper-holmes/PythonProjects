@@ -14,3 +14,7 @@ class Fish(Animal):
 
     def swim(self):
         print("Swimming")
+
+    def breath(self):
+        super().breath()
+        print("Underwater")
