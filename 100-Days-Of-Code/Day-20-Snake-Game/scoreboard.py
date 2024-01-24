@@ -12,5 +12,5 @@ class ScoreBoard(Turtle):
         self.color("white")
         self.penup()
         self.ht()
-
+        self.goto(0, 280)
         self.write(f"Score = {score}", True, align="center")
