@@ -9,10 +9,10 @@ class ScoreBoard(Turtle):
         self.color("white")
         self.penup()
         self.ht()
-        self.goto(0, 280)
-        self.write(f"Score = {self.score}", False, align="center")
+        self.goto(0, 260)
+        self.write(f"Score = {self.score}", False, align="center", font=("Arial", 20, "normal"))
 
     def UpdateScore(self):
         self.clear()
         self.score += 1
-        self.write(f"Score = {self.score}", False, align="center")
+        self.write(f"Score = {self.score}", False, align="center", font=("Arial", 20, "normal"))
