@@ -1,5 +1,6 @@
 from turtle import Screen, Turtle
 from paddle import Paddle
+from ball import Ball
 
 screen = Screen()
 screen.bgcolor("black")
@@ -9,6 +10,8 @@ screen.title("Pong")
 
 r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
+
+ball = Ball()
 
 screen.listen()
 screen.onkeypress(r_paddle.go_up, "Up")
