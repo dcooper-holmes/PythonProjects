@@ -3,6 +3,7 @@ from turtle import Screen, Turtle
 screen = Screen()
 screen.bgcolor("black")
 screen.setup(width=800, height=600)
+screen.tracer(0)
 screen.title("Pong")
 
 paddle = Turtle()
