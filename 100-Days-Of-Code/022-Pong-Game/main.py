@@ -21,5 +21,13 @@ def go_down():
     new_y = paddle.ycor() - 20
     paddle.goto(paddle.xcor(), new_y)
 
+screen.listen()
+screen.onkeypress(go_up, "Up")
+screen.onkeypress(go_down, "Down")
+
+game_is_on = True
+
+while game_is_on:
+    screen.update()
 
 screen.exitonclick()
