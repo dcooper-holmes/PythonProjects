@@ -6,10 +6,14 @@ class task:
         self.description = description
 
 def view_tasks(tasks):
+
+    print("[Tasks]\n")
     
     for task in tasks:
         print(f"Task Name: {task.name}")
-        print(f"Task Description: {task.description}")
+        print(f"Task Description: {task.description}\n")
+
+    input("Press any key to go back to the menu...")
 
 def create_task():
         
