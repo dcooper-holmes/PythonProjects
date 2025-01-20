@@ -1,7 +1,8 @@
-
-tasks = []
+from functions import task, create_task
 
 def main():
+
+    tasks = []
 
     running = True
 
@@ -17,8 +18,7 @@ def main():
             running = False
 
         elif selection == "2":
-            print("Option 2 selected")
-            running = False
+            tasks.append(create_task())
 
         elif selection == "3":
             print("Option 3 selected")
