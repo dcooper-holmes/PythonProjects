@@ -1,4 +1,4 @@
-from functions import task, create_task
+from functions import *
 
 def main():
 
@@ -11,11 +11,10 @@ def main():
         print("[Please select from the following options]")
         print("1 = View Tasks | 2 = Add Task | 3 = Remove Task | 4 = Quit")
         
-        selection = input("")
+        selection = input("\nOption: ")
 
         if selection == "1":
-            print("Option 1 selected")
-            running = False
+            view_tasks(tasks)
 
         elif selection == "2":
             tasks.append(create_task())
@@ -25,7 +24,7 @@ def main():
             running = False
 
         elif selection == "4":
-            print("Option 4 selected")
+            print("\nGoodbye.")
             running = False
 
 main()
