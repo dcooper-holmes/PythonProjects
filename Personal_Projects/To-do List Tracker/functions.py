@@ -25,7 +25,8 @@ def view_tasks(tasks):
     for task in tasks:
         print(f"ID: {task.id}")
         print(f"Task Name: {task.name}")
-        print(f"Task Description: {task.description}\n")
+        print(f"Task Description: {task.description}")
+        print(f"Task Completed: {task.completed}\n")
 
 def delete_task(tasks):
 
