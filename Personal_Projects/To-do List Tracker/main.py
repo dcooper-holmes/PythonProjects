@@ -1,4 +1,5 @@
 import os
+import time
 from functions import *
 
 def main():
@@ -17,12 +18,13 @@ def main():
         selection = input("\nOption: ")
 
         if selection == "1":
-            
             os.system('cls' if os.name == 'nt' else 'clear')
-
-            view_tasks(tasks)
-
-            input("Press any key to go back to the menu...")
+            if len(tasks) > 0:
+                view_tasks(tasks)
+                input("Press any key to go back to the menu...")
+            else:
+                print("You have no tasks available to view...\nReturning to Main Menu...")
+                time.sleep(2)
 
         elif selection == "2":
 
@@ -40,8 +42,12 @@ def main():
                     creating_tasks = False
 
         elif selection == "3":
-            print("Option 3 selected")
-            running = False
+            os.system('cls' if os.name == 'nt' else 'clear')
+            if len(tasks) > 0:
+                delete_task(tasks)
+            else:
+                print("You have no tasks available which you can delete...\nReturning to Main Menu...")
+                time.sleep(2)
 
         elif selection == "4":
             print("\nGoodbye.")
