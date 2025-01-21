@@ -32,7 +32,7 @@ def main():
 
                 os.system('cls' if os.name == 'nt' else 'clear')
 
-                tasks.append(create_task())
+                tasks.append(create_task(tasks))
 
                 if input("\nWould you like to create another task? Y/N: ").lower() == "y":
                     creating_tasks = True
