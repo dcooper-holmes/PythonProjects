@@ -24,3 +24,22 @@ def view_tasks(tasks):
         print(f"ID: {task.id}")
         print(f"Task Name: {task.name}")
         print(f"Task Description: {task.description}\n")
+
+def delete_task(tasks):
+
+    while True:
+        for task in tasks:
+            print(f"Task ID: {task.id}")
+            print(f"Task Name: {task.name}\n")
+
+        selection = int(input("Enter the ID of the task you would like to delete: ")) - 1
+
+        tasks.pop(selection)
+
+        if len(tasks) == 0:
+           break
+        else:
+            if input("Would you like to delete another task? Y/N: ").lower() == "y":
+                continue
+            else:
+                break
