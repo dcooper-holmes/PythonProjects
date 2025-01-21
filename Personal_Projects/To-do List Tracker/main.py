@@ -17,6 +17,9 @@ def main():
         selection = input("\nOption: ")
 
         if selection == "1":
+            
+            os.system('cls' if os.name == 'nt' else 'clear')
+
             view_tasks(tasks)
 
         elif selection == "2":
@@ -24,11 +27,12 @@ def main():
             creating_tasks = True
 
             while creating_tasks:
+
                 os.system('cls' if os.name == 'nt' else 'clear')
-                
+
                 tasks.append(create_task())
 
-                if input("Would you like to create another task? Y/N: ").lower() == "y":
+                if input("\nWould you like to create another task? Y/N: ").lower() == "y":
                     creating_tasks = True
                 else:
                     creating_tasks = False
