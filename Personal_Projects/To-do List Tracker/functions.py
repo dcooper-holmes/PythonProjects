@@ -1,18 +1,20 @@
 
 class task:
 
-    def __init__(self, id, name, description):
+    def __init__(self, id, name, description, completed):
         self.id = id
         self.name = name
         self.description = description
+        self.completed = completed
 
 def create_task(tasks):
     
     id = len(tasks) + 1
     name = input("Please enter the name of the task: ")
     description = input("Please enter the description of the task: ")
+    completed = False
 
-    new_task = task(id, name, description)
+    new_task = task(id, name, description, completed)
 
     return new_task
 
