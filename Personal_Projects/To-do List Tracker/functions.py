@@ -5,6 +5,15 @@ class task:
         self.name = name
         self.description = description
 
+def create_task():
+        
+    name = input("Please enter the name of the task: ")
+    description = input("Please enter the description of the task: ")
+
+    new_task = task(name, description)
+
+    return new_task
+
 def view_tasks(tasks):
 
     print("[Tasks]\n")
@@ -14,12 +23,3 @@ def view_tasks(tasks):
         print(f"Task Description: {task.description}\n")
 
     input("Press any key to go back to the menu...")
-
-def create_task():
-        
-    name = input("Please enter the name of the task: ")
-    description = input("Please enter the description of the task: ")
-
-    new_task = task(name, description)
-
-    return new_task
