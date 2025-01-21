@@ -22,4 +22,3 @@ def view_tasks(tasks):
         print(f"Task Name: {task.name}")
         print(f"Task Description: {task.description}\n")
 
-    input("Press any key to go back to the menu...")

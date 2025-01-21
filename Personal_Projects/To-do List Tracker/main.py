@@ -22,6 +22,8 @@ def main():
 
             view_tasks(tasks)
 
+            input("Press any key to go back to the menu...")
+
         elif selection == "2":
 
             creating_tasks = True
