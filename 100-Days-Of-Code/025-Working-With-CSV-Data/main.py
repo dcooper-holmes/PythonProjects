@@ -34,8 +34,7 @@
 # print(monday_temp_c)
 # print(monday_temp_f)
 
-#                   --Shorter Squirrel Data CSV Challenge--
-#TODO: Create a new CSV using Pandas which counts how many 'Grey', 'Cinnamon' and 'Black' squirrels there are.
+#--Squirrel Fur Colour CSV Challenge--
 
 import pandas
 
